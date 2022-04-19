@@ -6,7 +6,7 @@ body {
     background-color: #FDE8F4;
     color: #17020E; 
 }
-h1 {
+h1, h2 {
     font-family: 'Halant', serif; 
     font-weight: 600;
     color: #0d730d;
