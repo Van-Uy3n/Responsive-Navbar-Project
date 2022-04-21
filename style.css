@@ -2,9 +2,14 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
-    font-size: 130%;
+    font-size: 120%;
     background-color: #FDE8F4;
     color: #17020E; 
+}
+header, main, footer {
+    width: 40em;
+    max-width: 98%;
+    margin: 0 auto; /*top/bottom & right/left*/
 }
 h1, h2 {
     font-family: 'Halant', serif; 
@@ -16,15 +21,27 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex; /*attach to container*/
+    flex-direction: row; /*left to right*/
 }
-nav a {
+nav#menu a {
     text-decoration: none;
     display: block;
+    font-weight: 400; 
     padding: 0.5em 1em;
     background-color: #999999;
     color: #101010;
     border: 1px solid black; 
 }
-nav a:hover {
+nav#menu a:hover {
     background-color: #f9f9f9;
+    color: #101010; 
+}
+a:link {
+    color: #DDA15E; 
+}
+a:visited {
+    color: #BC6C25;
+}
+a:hover {
+    color: #606C38;
 }
