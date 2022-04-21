@@ -2,9 +2,9 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
-    font-size: 120%;
-    background-color: #FDE8F4;
-    color: #17020E; 
+    font-size: 125%;
+    background-color: #FEF9EF;
+    color: #302103; 
 }
 header, main, footer {
     width: 40em;
@@ -14,9 +14,9 @@ header, main, footer {
 h1, h2 {
     font-family: 'Halant', serif; 
     font-weight: 600;
-    color: #0d730d;
+    color: #185A72;
 }
-nav ul {
+nav#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,11 +37,11 @@ nav#menu a:hover {
     color: #101010; 
 }
 a:link {
-    color: #DDA15E; 
+    color: #AD0107; 
 }
 a:visited {
-    color: #BC6C25;
+    color: #97050a;
 }
 a:hover {
-    color: #606C38;
+    color: #134C5D;
 }
