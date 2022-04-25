@@ -22,7 +22,7 @@ nav#menu ul {
     margin: 0;
     padding: 0;
     display: flex; /*attach to container*/
-    flex-direction: row; /*left to right*/
+    flex-direction: column; /*left to right*/
 }
 nav#menu a {
     text-decoration: none;
@@ -47,3 +47,18 @@ a:visited {
 a:hover {
     color: #134C5D;
 }
+/*layout for screen over 550px wide*/
+@media only screen and (min-width: 550px) {
+    nav#menu ul {
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 2em;
+    } 
+    h2 {
+        font-size: 1.7em;
+    }
+    h3 {
+        font-size: 1.4em; 
+    }
+} 
