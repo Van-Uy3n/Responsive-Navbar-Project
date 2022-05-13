@@ -33,6 +33,10 @@ nav#menu a {
     color: #FEF9EF;
     border: 1.5px solid black; 
 }
+nav#menu.open ul {
+    opacity: 1;
+    height: auto;
+}
 nav#menu a:hover {
     background-color: #FEF9EF;
     color: #0B6057;
@@ -52,14 +56,14 @@ a:hover {
     width: 2em;
     height: 1.5em;
     margin: 0.6em auto 0.6em 0;
-    /*border: 2px solid #101010;
-    border-radius: 2px; */
+    border: 2px solid #0B6057;
+    border-radius: 2px; 
     transition: all 0.3s;
 }
 #menu-toggle div {
     width: 90%;
     height: 5px;
-    background-color: #0b6057b6;
+    background-color: #0B6057;
     margin: 4px auto;
     transition: all 0.3s;
 }
