@@ -59,7 +59,7 @@ a:hover {
 #menu-toggle div {
     width: 90%;
     height: 5px;
-    background-color: #0B6057;
+    background-color: #0b6057b6;
     margin: 4px auto;
     transition: all 0.3s;
 }
@@ -80,5 +80,6 @@ a:hover {
     #menu-toggle, #menu-toggle div {
         opacity: 0;
         height: 0;
+        width: 0;
     }
 } 
