@@ -23,6 +23,8 @@ nav#menu ul {
     padding: 0;
     display: flex; /*attach to container*/
     flex-direction: column; /*left to right*/
+    height: 0; 
+    opacity: 0; 
 }
 nav#menu a {
     text-decoration: none;
@@ -59,6 +61,9 @@ a:hover {
     border: 2px solid #0B6057;
     border-radius: 2px; 
     transition: all 0.3s;
+}
+#menu-toggle:hover {
+    background-color: #fef9ef73;
 }
 #menu-toggle div {
     width: 90%;
