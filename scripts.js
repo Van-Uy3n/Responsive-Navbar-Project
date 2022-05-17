@@ -10,6 +10,15 @@ window.onload = function() {
         globalNavbar.classList.add("open");
         toggle.classList.add("open");
     }
+    //add a toggle click function, which serves as an on-off button
+    toggle.onclick = function() {
+        if (globalNavbar.classList.contains("open")) {
+            globalNavbar.classList.remove("open"); 
+        }
+        else { 
+            globalNavbar.classList.add("open");
+        }
+    }
 }
 window.onresize = function() {
     var screenWidth = window.innerWidth; 
