@@ -24,7 +24,12 @@ nav#menu ul {
     display: flex; /*attach to container*/
     flex-direction: column; /*left to right*/
     height: 0; 
-    opacity: 0; 
+    opacity: 0;
+    transition: all .3s ease-in; 
+}
+nav#menu.open ul {
+    opacity: 1;
+    height: auto;
 }
 nav#menu a {
     text-decoration: none;
@@ -35,14 +40,15 @@ nav#menu a {
     color: #FEF9EF;
     border: 1.5px solid black; 
 }
-nav#menu.open ul {
-    opacity: 1;
-    height: auto;
+nav#menu a:visited {
+    background-color: #0B6057; 
+    color: #fef9efbb;
 }
 nav#menu a:hover {
     background-color: #FEF9EF;
     color: #0B6057;
 }
+
 /*links*/
 a:link {
     color: #AD0107; 
@@ -58,24 +64,25 @@ a:hover {
     width: 2em;
     height: 1.5em;
     margin: 0.6em auto 0.6em 0;
-    border: 2px solid #0B6057;
-    border-radius: 2px; 
+    border-radius: 2em; 
     transition: all 0.3s;
 }
 #menu-toggle:hover {
-    background-color: #fef9ef73;
+    background-color: #fef9ef73; /*change color*/
 }
 #menu-toggle div {
-    width: 90%;
-    height: 5px;
+    width: 50%;
+    height: 3px;
     background-color: #0B6057;
     margin: 4px auto;
-    /*transform: translateY(12px); */
+    transform: translateY(12px); 
 }
 /*layout for screen over 550px wide*/
 @media only screen and (min-width: 550px) {
     nav#menu ul {
         flex-direction: row;
+        height: auto;
+        opacity: 1;
     }
     h1 {
         font-size: 2em;

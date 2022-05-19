@@ -3,7 +3,7 @@ var mobileBreakpoint = 550;
 //when the page loads, add an open class to nav if screen is wide enough
 window.onload = function() {
     var screenWidth = window.innerWidth; 
-    var globalNavbar = document.getElementById("global-nav");
+    var globalNavbar = document.getElementById("menu");
     var toggle = document.getElementById("menu-toggle");
     //add 'open' class to the ul in the navbar if wider than the breakpoint
     if (screenWidth > mobileBreakpoint) {
@@ -22,7 +22,7 @@ window.onload = function() {
 }
 window.onresize = function() {
     var screenWidth = window.innerWidth; 
-    var globalNavbar = document.getElementById("global-nav");
+    var globalNavbar = document.getElementById("menu");
     var toggle = document.getElementById("menu-toggle");
 
     if (screenWidth > mobileBreakpoint) {
