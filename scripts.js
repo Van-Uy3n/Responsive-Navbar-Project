@@ -14,9 +14,11 @@ window.onload = function() {
     toggle.onclick = function() {
         if (globalNavbar.classList.contains("open")) {
             globalNavbar.classList.remove("open"); 
+            toggle.classList.remove("open");
         }
         else { 
             globalNavbar.classList.add("open");
+            toggle.classList.add("open");
         }
     }
 }
